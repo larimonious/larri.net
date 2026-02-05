@@ -3,6 +3,8 @@ services:
     image: nginx:alpine
     volumes:
       - ./index.html:/usr/share/nginx/html/index.html:ro
+      - ./privacy.html:/usr/share/nginx/html/privacy.html:ro
+      - ./terms.html:/usr/share/nginx/html/terms.html:ro
     networks:
       - tunnel-net
 
